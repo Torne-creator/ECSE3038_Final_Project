@@ -227,6 +227,6 @@ def post_record_data():
         return e.messages, 400
 
 if __name__ == "__main__":
-    http_server = WSGIServer(("192.168.1.7", 5000), app)
+    http_server = WSGIServer(("192.168.1.4", 5000), app)
     http_server.serve_forever()
 
